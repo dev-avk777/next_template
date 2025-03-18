@@ -11,14 +11,12 @@
     "format": "prettier --write src",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "analyze": "ANALYZE=true next build",
-    "check-duplicates": "jscpd .",
-    "check-a11y": "axe --exit http://localhost:3000"
+    "analyze": "ANALYZE=true next build"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --fix --config eslint.config.mjs"
     ]
   },
   "dependencies": {

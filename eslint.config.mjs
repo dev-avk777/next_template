@@ -79,7 +79,6 @@ const config = [
       'eqeqeq': ['error', 'always'],
       'curly': ['error', 'all'],
       'brace-style': ['error', '1tbs'],
-      'comma-dangle': ['error', 'always-multiline'],
       'quotes': ['error', 'single', { avoidEscape: true }],
       'indent': ['error', 2],
       'max-len': ['error', {

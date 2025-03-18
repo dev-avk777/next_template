@@ -1,9 +1,9 @@
-// Дублирующаяся функция
-function calculateTotal(items: number[]): number {
-  return items.reduce((sum, item) => sum + item, 0)
+// Test file with duplicate code
+export function calculateTotal(numbers: number[]): number {
+  return numbers.reduce((sum, num) => sum + num, 0)
 }
 
-// Дублирующаяся функция
-function calculateTotal(items: number[]): number {
-  return items.reduce((sum, item) => sum + item, 0)
+// Duplicate implementation
+export function calculateTotal(numbers: number[]): number {
+  return numbers.reduce((sum, num) => sum + num, 0)
 }

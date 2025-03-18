@@ -1,16 +1,16 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "🔍 Проверка типов TypeScript..."
+echo "🔍 TypeScript type checking..."
 pnpm tsc --noEmit
 
-echo "🔍 Проверка безопасности зависимостей..."
+echo "🔍 Checking dependencies security..."
 pnpm audit
 
-echo "🔍 Проверка размера бандла..."
+echo "🔍 Checking bundle size..."
 pnpm analyze
 
-echo "🔍 Проверка сборки..."
+echo "🔍 Building project..."
 pnpm run build
 
-echo "✅ Все проверки пройдены успешно!"
+echo "✅ All checks passed successfully!"

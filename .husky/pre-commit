@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "🔍 Форматирование и линтинг..."
+echo "🔍 Formatting and linting..."
 pnpm lint-staged
 
-echo "✅ Проверки коммита пройдены успешно!"
+echo "✅ Pre-commit checks passed successfully!"

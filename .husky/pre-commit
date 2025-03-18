@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Проверка дубликатов кода..."
+pnpm check-duplicates
+
+echo "🔍 Форматирование и линтинг..."
+pnpm lint-staged --config eslint.config.mjs
+
+echo "✅ Проверки коммита пройдены успешно!"
+pnpm check-duplicates && pnpm lint-staged --config eslint.config.mjs

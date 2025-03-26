@@ -5,7 +5,7 @@ const nextConfig = {
   experimental: {
     turbo: {
       rules: {
-        // Настройки для Turbopack
+        // Settings for Turbopack
       }
     }
   }

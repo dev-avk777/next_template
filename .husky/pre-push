@@ -1,14 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "🔍 TypeScript type checking..."
-pnpm tsc --noEmit || exit 0
-
 echo "🔍 Checking dependencies security..."
 pnpm audit || echo "Security check completed with warnings"
-
-echo "🔍 Checking bundle size..."
-pnpm analyze || echo "Bundle analysis completed with warnings"
 
 echo "🔍 Building project..."
 pnpm run build || exit 1

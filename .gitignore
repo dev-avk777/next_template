@@ -44,3 +44,6 @@ next-env.d.ts
 /.vscode/
 .idea/
 .cursorignore
+.cursorrules
+
+/memory-bank

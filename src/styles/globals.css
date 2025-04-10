@@ -7,13 +7,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #FFFFFF;
+  --background: #ffffff;
   --foreground: #111111;
 }
 
 .dark {
   --background: #111111;
-  --foreground: #FFFFFF;
+  --foreground: #ffffff;
 }
 
 @layer base {

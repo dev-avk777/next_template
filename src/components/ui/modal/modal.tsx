@@ -17,21 +17,21 @@ export const ModalContent = forwardRef<ElementRef<typeof Dialog.Content>, ModalC
   ({ children, className, onCloseHandler, ...restProps }: ModalContentProps, ref) => {
     return (
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-white animate-fadeIn " />
+        <Dialog.Overlay className="animate-fadeIn fixed inset-0 bg-white" />
 
         <Dialog.Content
           className={clsx(
-            'fixed inset-0 z-50 flex flex-col items-center bg-white py-8 animate-fadeIn',
+            'animate-fadeIn fixed inset-0 z-50 flex flex-col items-center bg-white py-8',
             className
           )}
           {...restProps}
           ref={ref}
         >
           <Dialog.Title className="sr-only">Modal Title</Dialog.Title>
-          <div className="w-full max-w-[28rem] text-center flex-grow flex flex-col items-center justify-between px-6 relative">
+          <div className="relative flex w-full max-w-[28rem] flex-grow flex-col items-center justify-between px-6 text-center">
             <Dialog.Close
               aria-label="Close"
-              className="absolute top-2 right-[40px] cursor-pointer text-gray-500 hover:text-gray-700"
+              className="absolute right-[40px] top-2 cursor-pointer text-gray-500 hover:text-gray-700"
               onClick={onCloseHandler}
             >
               <Close height={17.5} width={17.5} />

@@ -1,10 +1,10 @@
+import { FlatCompat } from '@eslint/eslintrc'
 import js from '@eslint/js'
-import tsParser from '@typescript-eslint/parser'
+import nextPlugin from '@next/eslint-plugin-next'
 import tsPlugin from '@typescript-eslint/eslint-plugin'
+import tsParser from '@typescript-eslint/parser'
 import reactPlugin from 'eslint-plugin-react'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
-import nextPlugin from '@next/eslint-plugin-next'
-import { FlatCompat } from '@eslint/eslintrc'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
@@ -78,15 +78,10 @@ const config = [
       'no-var': 'error',
       'eqeqeq': ['error', 'always'],
       'curly': ['error', 'all'],
-      'brace-style': ['error', '1tbs'],
-      'quotes': ['error', 'single', { avoidEscape: true }],
-      'indent': ['error', 2],
-      'max-len': ['error', {
-        code: 100,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-        ignoreComments: true,
-      }],
+      'brace-style':'off',
+      'quotes': 'off',
+      'indent':'off',
+      'max-len': 'off',
     },
     settings: {
       react: {
